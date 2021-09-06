@@ -31,3 +31,8 @@ public class Queue {
         queue.print();
     }
 }
+
+//Los resultados obtenidos son los esperados, se imprimen los números 12,0,89,77 en ese orden
+//luego de agregar todos los números y desencolar 3
+//esto debido a que cuando agregamos un elemento a la lista doblemente enlazada lo agregamos al final
+// y cuando desencolamos un elemento sustituimos la cabeza de la lista por el siguiente nodo

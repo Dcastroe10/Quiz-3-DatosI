@@ -6,7 +6,7 @@ public class Doublelinked {
 
     public void insertar (Object data) {
         Node nuevo = new Node(data);
-        if (head == null) {
+        if(head == null) {
             head = nuevo;
             end = head;
             this.lenght++;
@@ -19,10 +19,13 @@ public class Doublelinked {
         }
     }
 
-    public void dele_first(){
-        head = head.getNext();
-    }
+    public void dele_first() {
+        if (head != null) {
+            head = head.getNext();
+            head.setPrevious(null);
 
+        }
+    }
     public void see(){
         System.out.println(head.getInfo());
     }
