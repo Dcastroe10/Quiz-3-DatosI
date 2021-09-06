@@ -19,6 +19,14 @@ public class Doublelinked {
         }
     }
 
+    public void dele_first(){
+        head = head.getNext();
+    }
+
+    public void see(){
+        System.out.println(head.getInfo());
+    }
+
 
     public void print_list(){
         Node aux = head;
@@ -39,18 +47,8 @@ public class Doublelinked {
     public void size(){
         System.out.println(lenght);
     }
-    public static void main(String[] args) {
-        Doublelinked lista = new Doublelinked();
-        lista.insertar(23);
-        lista.insertar(24);
-        lista.insertar(25);
-        lista.insertar(26);
-        lista.insertar(27);
-        lista.print_list();
-        System.out.println("----------------------");
-        lista.print_reversed();
-        lista.size();
 
-    }
+
+
 }
 
