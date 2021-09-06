@@ -1,10 +1,13 @@
 public class Queue {
     private Doublelinked queue = new Doublelinked();
+
+
     public void Enqueue(Object data){
         this.queue.insertar(data);
     }
 
     public void Dequeue(){
+
         this.queue.dele_first();
     }
 
@@ -15,6 +18,11 @@ public class Queue {
     public void print(){
         this.queue.print_list();
     }
+
+    public void size(){
+     this.queue.size();
+    }
+
 
     public static void main(String[] args) {
         Queue queue = new Queue();
