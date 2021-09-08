@@ -15,7 +15,7 @@ public class Queue {
         queue.see();
     }
 
-    public void print(){
+    public void print_queue(){
         this.queue.print_list();
     }
 
@@ -36,10 +36,9 @@ public class Queue {
         queue.Dequeue();
         queue.Dequeue();
         queue.Dequeue();
-        queue.print();
+        queue.print_queue();
     }
 }
-
 //Los resultados obtenidos son los esperados, se imprimen los números 12,0,89,77 en ese orden
 //luego de agregar todos los números y desencolar 3
 //esto debido a que cuando agregamos un elemento a la lista doblemente enlazada lo agregamos al final
